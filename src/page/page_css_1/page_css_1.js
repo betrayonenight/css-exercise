@@ -1,7 +1,20 @@
 import React from'react'
-import styles from './page_css_1.less'
+import './page_css_1.less'
 export default function PageCSS1() {
     return (
-        <div className={styles.container}>PageCSS1</div>
+        <>
+            <div className='container'>
+                PageCSS1,PageCSS1,PageCSS1
+                PageCSS1,PageCSS1,PageCSS1
+            </div>
+            <div>
+                <div className='container_2'>
+                    <div>      
+                        {/* PageCSS1,PageCSS1,PageCSS1
+                        PageCSS1,PageCSS1,PageCSS1 */}
+                    </div>
+                </div>
+            </div>
+        </>
     )
 }

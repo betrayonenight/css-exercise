@@ -1,14 +1,192 @@
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgb(228, 228, 228);
-    margin-top: 50px;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(228, 228, 228);
+  margin-top: 50px;
 }
-.container{
-    width: 200px;
-    height: 200px;
-    border:10px solid hsla(0,0%,100%,.5);
-    background-color: white;
-    background-clip: padding-box;
+/*  1  */
+// .container{
+//     width: 200px;
+//     height: 200px;
+//     border:10px solid hsla(0,0%,100%,.5);
+//     background-color: white;
+//     background-clip: padding-box;
+// }
+
+/*  2  */
+// .container{
+//     width: 200px;
+//     height: 200px;
+//     background: yellowgreen;
+//     box-shadow: 0 0 0 10px #655,0 0 0 15px deeppink,0 2px 5px 15px rgba(0, 0, 0,.6);//deeppink的部分实际上只有15px-10px
+// }
+// .container{
+//     width: 200px;
+//     height: 200px;
+//     background: yellowgreen;
+//     outline: 5px solid deeppink; //描边 //甚至可以接受负值
+// }
+
+/*  3  */
+// .container{
+//     width: 200px;
+//     height: 200px;
+//     background: url(code-pirate.svg) no-repeat #58a;
+//     background-position: right 10px bottom 10px;
+// }
+
+/*  4  */
+// .container{
+//     background: tan;
+//     border-radius: .8em;
+//     padding: 1em;
+//     box-shadow: 0 0 0 .6em #655;
+//     outline: .6em solid #655;
+// }
+// .container_2{
+//     // width: 200px;
+//     // height: 200px;
+//     background:  #655;
+//     padding: .8em;
+// }
+// .container_2 > div{
+//     background: tan;
+//     border-radius: .8em;
+//     padding: 1em;
+// }
+
+/*  5  */
+// .container{
+//     width: 200px;
+//     height: 200px;
+//     background: linear-gradient(#fb3 30%,#58a 30%);//第三个参数是渐变的位置
+//     background-size: 100% 30px;
+// }
+// .container{
+//     width: 200px;
+//     height: 200px;
+//     background: linear-gradient(#fb3 33.3%,#58a 0,#58a 66.6%,yellowgreen 0);//第三个参数是渐变的位置
+//     background-size: 100% 45px;
+// }
+// .container{
+//     width: 200px;
+//     height: 200px;
+//     background: linear-gradient(to right,#fb3 33.3%,#58a 0,#58a 66.6%,yellowgreen 0);//to right则变为垂直条纹
+//     background-size: 100% 45px;
+// }
+// .container{
+//     width: 200px;
+//     height: 200px;
+//     background: linear-gradient(45deg,#fb3 33.3%,#58a 0,#58a 66.6%,yellowgreen 0);//45deg,则变为斜向条纹，旋转45度
+//     background-size: 100% 45px;
+// }
+// .container{
+//     width: 200px;
+//     height: 200px;
+//     background: linear-gradient(45deg,#fb3 25%,#58a 0,#58a 50%,#fb3 0,#fb3 75%,#58a 0);//45deg,则变为斜向条纹，旋转45度
+//     background-size: 30px 30px;
+// }
+// .container{
+//     width: 200px;
+//     height: 200px;
+//     background:  repeating-linear-gradient(45deg, #fb3,#58a 30px);//循环加强来实现渐变条纹
+// }
+// .container{
+//     width: 200px;
+//     height: 200px;
+//     background: repeating-linear-gradient(60deg, #fb3,#fb3 15px, #58a 0, #58a 30px)//60度条纹
+// }
+
+/*  6  */
+// .container{
+//     width: 200px;
+//     height: 200px;
+//     background: #58a;
+//     background-image:
+//         linear-gradient(white 1px, transparent 0),
+//         linear-gradient(90deg, white 1px, transparent 0);
+//     background-size: 30px 30px;
+// }
+// .container {
+//     width: 200px;
+//     height: 200px;
+//     background: #58a;
+//     background-image: linear-gradient(white 2px, transparent 0),
+//         linear-gradient(90deg, white 2px, transparent 0),
+//         linear-gradient(hsla(0, 0%, 100%, 0.3) 1px, transparent 0),
+//         linear-gradient(90deg, hsla(0, 0%, 100%, 0.3) 1px, transparent 0);
+//     background-size: 75px 75px, 75px 75px, 15px 15px, 15px 15px;
+// }
+//波点
+// .container {
+//   width: 200px;
+//   height: 200px;
+//   background: #58a;
+//   background: #655;
+//   background-image: radial-gradient(tan 30%, transparent 0),
+//     radial-gradient(tan 30%, transparent 0);
+//   background-size: 30px 30px;
+//   background-position: 0 0, 15px 15px;
+// }
+
+/*  7  */
+// .container {
+//   width: 200px;
+//   height: 200px;
+//   background: hsl(20, 40%, 90%);
+//   background-image: linear-gradient(90deg, #fb3 11px, transparent 0),
+//     linear-gradient(90deg, #ab4 23px, transparent 0),
+//     linear-gradient(90deg, #655 41px, transparent 0); //随机背景，然后用重叠来实现随机
+//   background-size: 41px 100%, 61px 100%, 83px 100%;
+// }
+
+/*  8  */
+// .container {
+//   width: 200px;
+//   height: 200px;
+//   padding: 1em;
+//   border: 1em solid transparent;
+//   background: linear-gradient(white, white) padding-box,
+//     url(stone-art.jpg) border-box 0 / cover;
+// }
+//虚线框
+// @keyframes ants {
+//   to {
+//     background-position: 100%;
+//   }
+// }
+// .container {
+//   width: 200px;
+//   height: 200px;
+//   padding: 1em;
+//   border: 1px solid transparent;
+//   background: linear-gradient(white, white) padding-box,
+//     repeating-linear-gradient(-45deg, black 0, black 25%, white 0, white 50%) 0 /
+//       0.6em 0.6em;
+//   animation: ants 12s linear infinite;
+// }
+
+/*  10  */
+//平行四边形
+// .container {
+//   width: 200px;
+//   height: 200px;
+// }
+.container {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  /* 其他的文字颜色、内边距等样式…… */
+}
+.container::before {
+  content: ""; /* 用伪元素来生成一个矩形 */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #58a;
+  transform: skew(-45deg);
 }
