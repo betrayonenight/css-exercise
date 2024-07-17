@@ -5,3 +5,38 @@ body{
     background: rgb(143, 189, 228);
     margin-top: 50px;
 }
+.main{
+    display: flex;
+    gap: 20px;
+}
+/*  6  */
+.container{
+    width: 200px;
+    height: 200px;
+    background: #58a;
+    background-image:
+        linear-gradient(white 1px, transparent 0),
+        linear-gradient(90deg, white 1px, transparent 0);
+    background-size: 30px 30px;
+}
+.container2 {
+    width: 200px;
+    height: 200px;
+    background: #58a;
+    background-image: linear-gradient(white 2px, transparent 0),
+        linear-gradient(90deg, white 2px, transparent 0),
+        linear-gradient(hsla(0, 0%, 100%, 0.3) 1px, transparent 0),
+        linear-gradient(90deg, hsla(0, 0%, 100%, 0.3) 1px, transparent 0);
+    background-size: 75px 75px, 75px 75px, 15px 15px, 15px 15px;
+}
+//波点
+.container3 {
+  width: 200px;
+  height: 200px;
+  background: #58a;
+  background: #655;
+  background-image: radial-gradient(tan 30%, transparent 0),
+    radial-gradient(tan 30%, transparent 0);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}

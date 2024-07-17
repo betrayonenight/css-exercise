@@ -1,0 +1,20 @@
+
+  /*  10  */
+//平行四边形
+.container {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  /* 其他的文字颜色、内边距等样式…… */
+}
+.container::before {
+  content: ""; /* 用伪元素来生成一个矩形 */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #58a;
+  transform: skew(-45deg);
+}

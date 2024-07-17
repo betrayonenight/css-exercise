@@ -1,0 +1,61 @@
+/*  12  */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(143, 189, 228);
+    margin-top: 50px;
+  }
+  .main{
+    display: flex;
+    gap: 20px;
+  }
+//切角效果
+.container {
+  width: 200px;
+  height: 200px;
+  background: #58a;
+  background: linear-gradient(-45deg, transparent 15px, #58a 0);
+}
+//线性渐变
+.container2 {
+  width: 200px;
+  height: 200px;
+  background: #58a;
+  background: linear-gradient(135deg, transparent 15px, #58a 0) top left,
+    linear-gradient(-135deg, transparent 15px, #58a 0) top right,
+    linear-gradient(-45deg, transparent 15px, #58a 0) bottom right,
+    linear-gradient(45deg, transparent 15px, #58a 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+}
+//径向渐变
+.container3 {
+  width: 200px;
+  height: 200px;
+  background: #58a;
+  background: radial-gradient(circle at top left, transparent 15px, #58a 0) top
+      left,
+    radial-gradient(circle at top right, transparent 15px, #58a 0) top right,
+    radial-gradient(circle at bottom right, transparent 15px, #58a 0) bottom
+      right,
+    radial-gradient(circle at bottom left, transparent 15px, #58a 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+}
+//斜面切角
+.container4 {
+  width: 200px;
+  height: 200px;
+  background: #58a;
+  clip-path: polygon(
+    20px 0,
+    calc(100% - 20px) 0,
+    100% 20px,
+    100% calc(100% - 20px),
+    calc(100% - 20px) 100%,
+    20px 100%,
+    0 calc(100% - 20px),
+    0 20px
+  );
+}

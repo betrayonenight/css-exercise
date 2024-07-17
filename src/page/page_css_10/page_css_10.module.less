@@ -1,0 +1,20 @@
+/*  11  */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(143, 189, 228);
+    margin-top: 50px;
+  }
+//菱形
+//使用clip-path属性来裁剪成我们想要的形状
+.container {
+  width: 200px;
+  height: 200px;
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  transition: 1s clip-path;
+  background-color: antiquewhite;
+}
+.container:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}

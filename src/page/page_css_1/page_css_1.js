@@ -26,17 +26,6 @@ export default function PageCSS1() {
                 PageCSS1,PageCSS1,PageCSS1
             </div>
 
-            {/* <main>
-                <blockquote>
-                    "The only way to get rid of a temptation[...]"
-                    <footer>－
-                        <cite>
-                            Oscar Wilde,
-                            The Picture of Dorian Gray
-                        </cite>
-                    </footer>
-                </blockquote>
-            </main> */}
         </>
     )
 }

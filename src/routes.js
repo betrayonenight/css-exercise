@@ -9,6 +9,13 @@ import PageCSS8 from './page/page_css_8/page_css_8';
 import PageCSS9 from './page/page_css_9/page_css_9';
 import PageCSS10 from './page/page_css_10/page_css_10';
 import PageCSS11 from './page/page_css_11/page_css_11';
+import PageCSS12 from './page/page_css_12/page_css_12';
+import PageCSS13 from './page/page_css_13/page_css_13';
+import PageCSS14 from './page/page_css_14/page_css_14';
+import PageCSS15 from './page/page_css_15/page_css_15';
+import PageCSS16 from './page/page_css_16/page_css_16';
+
+
 
 const routes = [
   { path: '/pagecss_1', element: <PageCSS1 /> },
@@ -22,6 +29,14 @@ const routes = [
   { path: '/pagecss_9', element: <PageCSS9 /> },
   { path: '/pagecss_10', element: <PageCSS10 /> },
   { path: '/pagecss_11', element: <PageCSS11 /> },
+  { path: '/pagecss_12', element: <PageCSS12 /> },
+  { path: '/pagecss_13', element: <PageCSS13 /> },
+  { path: '/pagecss_14', element: <PageCSS14 /> },
+  { path: '/pagecss_15', element: <PageCSS15 /> },
+  { path: '/pagecss_16', element: <PageCSS16 /> },
+
+
+
 ];
 
 export default routes;
