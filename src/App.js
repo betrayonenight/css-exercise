@@ -1,13 +1,14 @@
 import './App.css';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
-import PageCSS1 from './page/page_css_1/page_css_1';
-import PageCSS2 from './page/page_css_2/page_css_2';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import routes from './routes';
+
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/pagecss_1" element={<PageCSS1/>} />
-        <Route path="/pagecss_2" element={<PageCSS2/>} />
+        {routes.map((route, index) => (
+          <Route key={index} path={route.path} element={route.element} />
+        ))}
       </Routes>
     </Router>
   );

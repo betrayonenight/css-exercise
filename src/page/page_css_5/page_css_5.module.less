@@ -1,0 +1,53 @@
+/*  5  */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(143, 189, 228);
+    margin-top: 50px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(#fb3 30%,#58a 30%);//第三个参数是渐变的位置
+    background-size: 100% 30px;
+}
+.containe2{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(#fb3 33.3%,#58a 0,#58a 66.6%,yellowgreen 0);//第三个参数是渐变的位置
+    background-size: 100% 45px;
+}
+.containe3{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to right,#fb3 33.3%,#58a 0,#58a 66.6%,yellowgreen 0);//to right则变为垂直条纹
+    background-size: 100% 45px;
+}
+.containe4{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg,#fb3 33.3%,#58a 0,#58a 66.6%,yellowgreen 0);//45deg,则变为斜向条纹，旋转45度
+    background-size: 100% 45px;
+}
+.containe5{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg,#fb3 25%,#58a 0,#58a 50%,#fb3 0,#fb3 75%,#58a 0);//45deg,则变为斜向条纹，旋转45度
+    background-size: 30px 30px;
+}
+.containe6{
+    width: 200px;
+    height: 200px;
+    background:  repeating-linear-gradient(45deg, #fb3,#58a 30px);//循环加强来实现渐变条纹
+}
+.containe7{
+    width: 200px;
+    height: 200px;
+    background: repeating-linear-gradient(60deg, #fb3,#fb3 15px, #58a 0, #58a 30px)//60度条纹
+}
